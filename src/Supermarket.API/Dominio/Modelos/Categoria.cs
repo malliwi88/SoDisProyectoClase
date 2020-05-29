@@ -6,6 +6,6 @@ namespace Supermarket.API.Dominio.Modelos
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public IList<Producto> Productos { get; set; } = new List<Producto>();
+        //public IList<Producto> Productos { get; set; } = new List<Producto>();
     }
 }
