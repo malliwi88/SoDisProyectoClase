@@ -22,6 +22,12 @@ namespace Supermarket.API.Persistencia
                 }
             );
 
+            this.Categorias.Add(
+                new Categoria{
+                    Nombre = "Categoria2"
+                }
+            );
+
             // Equivale a commit sobre la Db en memoria.
             this.SaveChanges();
         }
