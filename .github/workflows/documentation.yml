@@ -13,6 +13,10 @@ on:
 
 # https://github.com/hubgit/pandoc/blob/master/.github/workflows/main.yml
 # https://github.com/pandoc/pandoc-action-example/blob/master/.github/workflows/advanced.yml
+# https://github.com/Ender-events/pandoc/blob/master/.github/workflows/example.yml
+# https://github.com/htdebeer/pandocomatic
+# https://ropenscilabs.github.io/actions_sandbox/websites-using-pkgdown-bookdown-and-blogdown.html
+
 jobs:
     convert_via_pandoc:
         runs-on: ubuntu-18.04
@@ -24,7 +28,7 @@ jobs:
             echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
         - uses: docker://pandoc/latex:2.9
           with:
-              args: --output=Docs/result.pdf ${{ env.FILELIST }}
+            args: "--standalone  --output=Docs/result.pdf ${{ env.FILELIST }}"
         - uses: actions/upload-artifact@master
           with:
               name: output

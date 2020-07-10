@@ -57,7 +57,7 @@ Pero **su FORK** (su repositorio --> [malliwi88/SoDisProyectoClase]()), puede no
 
 Para poder tener al día su **bifuración**(fork), emplee los siquientes comandos
 
-> ⚠ **Este paso solo se requiere la primera vez**
+> **Este paso solo se requiere la primera vez**
 > ```bash
 > git checkout master
 > git remote add upstream https://github.com/wkrea/SoDisProyectoClase.git
